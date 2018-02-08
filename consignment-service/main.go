@@ -4,7 +4,6 @@ package main
 import (
 	"context"
 	"fmt"
-	"log"
 
 	// Import generated from protobuf code
 	micro "github.com/micro/go-micro"
@@ -45,7 +44,7 @@ func (s *service) CreateConsignment(ctx context.Context, req *pb.Consignment, re
 		MaxWeight: req.Weight,
 		Capacity:  int32(len(req.Containers)),
 	})
-	log.Printf("Found vessel: %s \n", vesselResponse.Vessel.Name)
+	//	log.Printf("Found vessel: %s \n", vesselResponse.Vessel.Name)
 
 	if err != nil {
 		return err
