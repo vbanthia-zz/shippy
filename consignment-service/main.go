@@ -7,7 +7,7 @@ import (
 
 	// Import generated from protobuf code
 	micro "github.com/micro/go-micro"
-	pb "github.com/vbanthia/container-management-app/consignment-service/proto/consignment"
+	pb "github.com/vbanthia/shippy/consignment-service/proto/consignment"
 )
 
 // IRepository hoge

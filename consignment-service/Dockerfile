@@ -1,7 +1,7 @@
 # consignment-service/Dockerfile
 FROM golang:1.9.0 as builder
 
-WORKDIR /go/src/github.com/vbanthia/container-management-app/consignment-service
+WORKDIR /go/src/github.com/vbanthia/shippy/consignment-service
 
 COPY . .
 
@@ -16,6 +16,6 @@ RUN apk --no-cache add ca-certificates
 
 RUN mkdir /app
 WORKDIR /app
-COPY --from=builder /go/src/github.com/vbanthia/container-management-app/consignment-service/consignment-service .
+COPY --from=builder /go/src/github.com/vbanthia/shippy/consignment-service/consignment-service .
 
 CMD ["./consignment-service"]

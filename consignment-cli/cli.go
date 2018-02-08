@@ -10,7 +10,7 @@ import (
 
 	microclient "github.com/micro/go-micro/client"
 	"github.com/micro/go-micro/cmd"
-	pb "github.com/vbanthia/container-management-app/consignment-service/proto/consignment"
+	pb "github.com/vbanthia/shippy/consignment-service/proto/consignment"
 )
 
 const (
